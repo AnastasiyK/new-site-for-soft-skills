@@ -1,0 +1,122 @@
+.parent{
+    margin-bottom: 10px;
+    display: grid;
+    gap: 20px;
+    /* 1 */
+    /* grid-template-columns: 40px 40px 40px 40px; в столбик */
+    /* 2 */
+    /* grid-template-rows: 40px 40px 40px 40px; в строку */
+    /* 3 */
+    /* grid-template-columns: 80px 80px 80px 80px;
+    grid-template-rows: 40px 40px; */
+    /* 4 */
+    /* grid-template-columns: repeat(4, 40px);
+    grid-template-rows: repeat(4, 20px); */
+    /* 5 */
+    /* grid-template: repeat(4, 150px) / 40px 40px; */
+    /* 6 */
+    /* grid-template-columns: repeat(4, 1fr); */
+}
+
+.item{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: 50px;
+    background-color: #750808;
+}
+
+.parent2{
+    display: grid;
+    gap: 10px;
+    /* grid-template-rows: 50px 150px;
+    grid-auto-rows: 70px; */
+    grid-template-columns: 50px 150px;
+    grid-auto-columns: 70px;
+    grid-auto-flow: column;
+    .item{
+        background-color: #750808;;
+    }
+}
+
+.parent3{
+    display: grid;
+    grid-auto-columns: auto auto auto;
+    gap: 10px;
+    }
+    .item{
+        background-color: #737ad6;
+    }
+    .child__active{
+        background-color: #750808;
+        grid-column: span 2;    
+}
+
+.parent4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100%;
+    gap: 17px;
+    grid-template-areas: 
+    "header header header"
+    "sidebar . ."
+    "footer footer .";
+    .item:nth-child(1){
+        grid-area: header;
+        background-color: #750808;
+    }
+    .item:nth-child(2){
+        grid-area: sidebar;
+        background-color: #750808;
+    }
+    .item:nth-child(3){
+        grid-area: footer;
+        background-color: #750808;
+    }
+}
+
+.pictures{
+    width: 30%;
+    display: grid;
+    grid-template-rows: repeat(3, 200px);
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+}
+
+.pictures img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.pictures img:nth-child(1),
+.pictures img:nth-child(2),
+.pictures img:nth-child(3){
+    grid-column: span 2;
+}
+
+.pictures img:nth-child(4),
+.pictures img:nth-child(5){
+    grid-column: span 3;
+}
+
+.pictures img:nth-child(6){
+    grid-column: span 6;
+}
+
+.parent6{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 150px);
+    justify-items: stretch;
+    gap: 10px;
+    /* justify-items
+        start - слева
+        edd -  справо
+        stretch - растянулось на столько, сколько можно*/
+    height: 600px;
+    align-items: end;
+    /* align-items
+        start -сверху
+        edd - снизу*/
+}
