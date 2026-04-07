@@ -33,19 +33,21 @@
                             <li><a href="#sertifications">Сертификаты</a></li>
                             <li><a href="#reviews">Отзывы</a></li>
                             <li><a href="#info">Контакты</a></li>
-                            <li><a href="#questions">Впоросы</a></li>
+                            <li><a href="#questions">Вопросы</a></li>
                         </ul>
                     </nav>
                 </div>
-                <div class="logo">
-                    <div class="logo__block">
-                        <img src="icons/logo.svg" alt="Логотип">
+                <a href="/" target="_blank">
+                    <div class="logo">
+                        <div class="logo__block">
+                            <img src="icons/logo.svg" alt="Логотип">
+                        </div>
+                        <div class="logo__text">  
+                            <b><p>Soft Skills</p></b>
+                            <p>Школа программирования</p>
+                        </div>
                     </div>
-                    <div class="logo__text">  
-                        <b><p>Soft Skills</p></b>
-                        <p>Школа программирования</p>
-                    </div>
-                </div>
+                </a>
                 <a href="/" class="phone">
                     <img src="icons/phone.svg" alt="Телефон">
                     <span>Записаться</span>                    
@@ -70,7 +72,7 @@
                             <span>Записаться на пробный урок</span>
                         </button>
                         <button class="future__btn future__btn--right">
-                            <img src="icons/triangle.svg" alt="иконка проигрывателя">
+                            <img src="icons/triangle_white.svg" alt="иконка проигрывателя">
                             <span>Смотреть видео</span>
                         </button>
                     </div>
@@ -240,43 +242,38 @@
            <button class="courses__btn" onclick="openModal()">
                 Записаться на пробный урок
             </button>
-
+            <div id="modal" class="modal-overlay"></div>
             <div class="course__form">
-                <form class="signup">
-                    <h2>Запись на пробное занятие</h2>
-
-                    <div class="input__field">
-                        <label for="title">ФИО родителя</label>
-                        <input type="text" name="name-parent" required placeholder="Введите совю ФИО">
-                    </div>
-
-                    <div class="input__field">
-                        <label for="title">Номер телефона</label>
-                        <input type="tel" name="number" required placeholder="Введите ваш номер телефона">
-                    </div>
-
-                    <div class="input__field">
-                        <label for="title">ФИО ребёнка</label>
-                        <input type="text" name="name-child" required placeholder="Введите имя ребёнка">
-                    </div>
-
-                    <div class="input__field">
-                        <label for="title">Дата рождения</label>
-                        <input type="date" name="date" required placeholder="Введите год рождения своего ребёнка">
-                    </div>
-
-                    <button type="submit" class="btn">Отправить заявку</button>
-                    
-            </div>
-
-            <div id="modal" class="modal-overlay">
-                <div class="madal-content">
+                <div class="modal-content">
                     <span class="modal-close" onclick="closeModal()">
                         &times;
                     </span>
+                    <form class="signup">
+                        <h2>Запись на пробное занятие</h2>
+
+                        <div class="input__field">
+                            <label for="title">ФИО родителя</label>
+                            <input type="text" name="name-parent" required placeholder="">
+                        </div>
+
+                        <div class="input__field">
+                            <label for="title">Номер телефона</label>
+                            <input type="tel" name="number" required placeholder="">
+                        </div>
+
+                        <div class="input__field">
+                            <label for="title">ФИО ребёнка</label>
+                            <input type="text" name="name-child" required placeholder="">
+                        </div>
+
+                        <div class="input__field">
+                            <label for="title">Дата рождения</label>
+                            <input type="date" name="date" required placeholder="">
+                        </div>
+
+                        <button type="submit" class="btn">Отправить заявку</button>                    
+                    </form>
                 </div>
-            </div>
-          
             </section>
         </section>   
         <section class="certificate">
@@ -301,7 +298,7 @@
                                 <!-- 1 -->
                                 <p>"Сын в восторге! Раньше только<br>играл в игры, теперь сам их<br>создаёт. Преподаватели объясняют<br>сложное простым языком."</p>
                                 <div class="who">
-                                    <img src="icons/circle.svg" alt="Круг">
+                                    <img src="icons/person-girl.svg" alt="Круг">
                                     <p>Марина Соколова<br>мама ученика 9 лет</p>
                                 </div>
                             </div>
@@ -310,7 +307,7 @@
                                 <img src="icons/stars.svg" alt="Звезды">
                                 <p>"Очень нравится подход без<br>скучной теории — сразу практика!<br>Создал уже 3 игры. Хочу стать<br>разработчиком!"</p>
                                 <div class="who">
-                                    <img src="icons/circle.svg" alt="Круг">
+                                    <img src="icons/person-boy.svg" alt="Круг">
                                     <p>Даниил<br>ученик 14 лет</p>
                                 </div>
                             </div>
@@ -319,7 +316,7 @@
                                 <img src="icons/stars.svg" alt="Звезды">
                                 <p>"Дочь занимается уже полгода на<br>курсе Python. Появился интерес к<br>учёбе, логика улучшилась.<br>Рекомендуем!"</p>
                                 <div class="who">
-                                    <img src="icons/circle.svg" alt="Круг">
+                                    <img src="icons/person-boy.svg" alt="Круг">
                                     <p>Алексей Петров<br>папа ученицы 12 лет</p>
                                 </div>
                             </div>
@@ -337,7 +334,7 @@
                         <span class="tag info__tag" id="info">Контакты</span>
                         <div class="info__list">
                                 <div class="info__item">
-                                    <span class="square"></span>
+                                    <img src="icons/address_info.svg" alt="Адрес">
                                     <div class="info__text">
                                         <h4>Адрес</h4>
                                         <p>г. Ярославль, пр-к Ленинградский, 52А</p>
@@ -345,7 +342,7 @@
                                 </div>
                                 
                                 <div class="info__item">
-                                    <span class="square"></span>
+                                    <img src="icons/phone_info.svg" alt="телефон">
                                     <div class="info__text">
                                         <h4>Телефон</h4>
                                         <p>+7 (996) 196-01-96</p>
@@ -353,7 +350,7 @@
                                 </div>
                                 
                                 <div class="info__item">
-                                    <span class="square"></span>
+                                    <img src="icons/mail_info.svg">
                                     <div class="info__text">
                                         <h4>Email </h4>
                                         <p>softskillsyar@gmail.com</p>
@@ -361,15 +358,15 @@
                                 </div>
 
                                 <div class="info__item">
-                                    <span class="square"></span>
+                                    <img src="icons/time_info.svg">
                                     <div class="info__text">
                                         <h4>Режим работы </h4>
-                                        <p>Пн-ср, пт: 09:30-19:30; чт: 09:30-20:00; сб-вс: 09:30-19:00</p>
+                                        <p>пн-ср, пт: 09:30-19:30;<br>чт: 09:30-20:00;<br>сб-вс: 09:30-19:00</p>
                                     </div>
                                 </div>
                                 <button class="info__phone">
                                     <!-- <img src="icons/phone.svg" alt="Телефон"> -->
-                                    <span class="tag__phone">Написать в WhatApp</span>                    
+                                    <span class="tag__phone">Написать</span>                    
                                 </button>
 
                         </div>
@@ -421,7 +418,6 @@
                     <div class="questions__item">
                         <div class="questions__text">
                         <!-- 4 -->
-                         
                             <p>Когда происходит набор в школу?</p>
                             <!-- <span class="circle"></span> -->
                         </div>
@@ -448,13 +444,40 @@
     </main>
     
     <footer>
-    
+        <div class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__info">
+                        <div class="footer__text">
+                            <p>Soft Skills</p>
+                            <p>Школа программирования</p>
+                        </div>
+                        <div class="addres">
+                            <p>Адрес: Ярославль </p>
+                            <p>Телефон: +7 (996) 196-01-96</p>
+                        </div>
+                        <div class="icons">
+                            <p>Написать нам</p>
+                            <a class="icon">
+                                <img src="icons/telegram.svg" alt="Наш телеграмм">
+                            </a>
+                            <a class="icon">
+                                <img src="icons/vk.svg" alt="Наш вк">
+                            </a>
+                            <a class="icon">
+                                <img src="icons/max.svg" alt="Наш макс">
+                            </a>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
     <!-- <script src="js/learning.js"></script> -->
+    <script src="js/api.js"></script>
     <script src="js/switch-online-offline.js"></script>
     <script src="js/accordion.js"></script>
     <script src="js/open-menu.js"></script>
-
     <script src="fetch/JS.js"></script>
 
 </body>
