@@ -18,16 +18,16 @@
     "url": "https://github.com/AnastasiyK/site-for-soft-skills/issues"
   },
   "homepage": "https://github.com/AnastasiyK/site-for-soft-skills#readme",
-  "dependencies": {
-    "browser-sync": "^3.0.4",
-    "childprocess": "^2.0.2",
-    "gulp": "^5.0.1",
-    "gulp-autoprefixer": "^10.0.0",
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
     "gulp-clean-css": "^4.3.0",
     "gulp-htmlmin": "^5.0.1",
-    "gulp-imagemin": "^9.2.0",
-    "gulp-rename": "^2.1.0",
-    "gulp-sass": "^6.0.1",
-    "sass": "^1.97.3"
+    "gulp-imagemin": "^7.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-webp": "^4.0.1",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-pngquant": "^9.0.2"
   }
 }
