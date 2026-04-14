@@ -3,6 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/favicon">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icons/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="icons/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icons/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff"><link rel="apple-touch-icon" sizes="57x57" href="icons/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/favicon">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icons/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="icons/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icons/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <title>Soft Skills - школа программированя</title>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,7 +80,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="/" class="phone">
+                <a href="/" class="phone" data-open-modal>
                     <img src="icons/phone.svg" alt="Телефон">
                     <span>Записаться</span>                    
                 </a>
@@ -66,7 +99,7 @@
                     <h1 class="future__title">Программируем<br/>будущее уже<br/>сегодня!</h1>
                     <p class="future__subtitle">Научим вашего ребёнка создавать игры и приложения<br/>без скучной теории. Только практика, творчество и результат!</p>
                     <div class="future__btns">
-                        <button class="future__btn future__btn--left">
+                        <button class="future__btn future__btn--left" data-open-modal>
                             <img src="icons/rocket.svg" alt="иконка ракеты">
                             <span>Записаться на пробный урок</span>
                         </button>
@@ -238,13 +271,13 @@
                 </div>
            </div>
            
-           <button class="courses__btn" onclick="openModal()">
+           <button class="courses__btn" data-open-modal>
                 Записаться на пробный урок
             </button>
-            <div id="modal" class="modal-overlay"></div>
-            <div class="course__form">
-                <div class="modal-content">
-                    <span class="modal-close" onclick="closeModal()">
+            <div id="modal" class="modal-overlay">
+                <div class="course__form">
+                    <div class="modal-content">
+                    <span class="modal-close">
                         &times;
                     </span>
                     <form class="signup">
@@ -273,7 +306,7 @@
                         <button type="submit" class="btn">Отправить заявку</button>                    
                     </form>
                 </div>
-            </section>
+            </div>
         </section>   
         <section class="certificate">
             <div class="container">
@@ -472,12 +505,9 @@
             </div>
         </div>
     </footer>
-    <!-- <script src="js/learning.js"></script> -->
-    <script src="js/api.js"></script>
     <script src="js/switch-online-offline.js"></script>
     <script src="js/accordion.js"></script>
-    <script src="js/open-menu.js"></script>
-    <script src="fetch/JS.js"></script>
+    <script src="js/form.js"></script>    
 
 </body>
 </html>
