@@ -36,9 +36,33 @@ a {
     margin: 0 auto; 
 }
 
+.modal-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.418);
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    cursor: pointer;
+}
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
 img{
     border-radius: 8px;
 }
+
 .title {
     font-weight: 700;
     font-size: 32px;
@@ -216,7 +240,11 @@ img{
         align-items: center;
         transition: all 2s ease; 
     }
+    &:hover{
+        background: #d400ff;
+    }
 }
+
 
 .future {
     /* display: none; */
@@ -275,30 +303,29 @@ img{
             cursor: pointer;
             box-shadow: 3px 3px 5px rgb(44, 7, 65);
             &:hover{
-                /* text-decoration: underline;  */
-                transition: all 2s ease; 
-                
+                background: #d400ff;
             }
         }
         .future__btn--right{
             color: #fff;
             background-color: var(--accent-color);
             box-shadow: 3px 3px 5px rgb(44, 7, 65);
+            cursor: pointer;
             &:hover{
-                /* text-decoration: underline;  */
-                transition: all 2s ease; 
-                cursor: pointer;
+                background: #d400ff;
+            }
             }
             img{
                 width: 25px;
                 height: 25px;
                 object-fit: contain;
             }
+            
         }
     }
     .future__advantages{
         display: flex;
-        gap: 8px;
+        gap: 20px;
         div{
             display: flex;
             align-items: center;
@@ -316,7 +343,6 @@ img{
 
         }
     }
-}
 
 .about{
     .about__title{
@@ -470,16 +496,17 @@ img{
 
 .course__form{
     position: relative;
-    padding: 20px;
+    padding: 40px;
     margin: 0 auto;
     border-radius: 16px;
     max-width: 600px;
-    background-color: rgb(224, 176, 255, 0.5);
+    background-color: rgb(205, 130, 255);
     border-radius: 8px;
     box-shadow: 3px 3px 5px rgb(44, 7, 65);
     .modal-close{
+        padding: 10px;
         position: absolute;
-        top: 10px;
+        top: 5px;
         right: 10px;
         font-size: 30px;
         cursor: pointer;
@@ -500,6 +527,10 @@ img{
             padding: 7px 7px;   
             border-radius: 8px;
             background: #deaeec;
+            cursor: pointer;
+            &:hover{
+               background: #ffffff; 
+            }
         }
     }
   
@@ -731,6 +762,9 @@ img{
     font-size: 20px;
     font-weight: 700;
     cursor: pointer;
+    &:hover{
+        background: #d400ff;
+    }
 }
  
 .certificates {
@@ -806,6 +840,9 @@ img{
             text-align: center;
             color: #fff;
             cursor: pointer;
+            &:hover{
+                background: #d400ff;;
+            }
         }
     }       
     .square{
