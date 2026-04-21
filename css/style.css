@@ -294,7 +294,7 @@ img{
     }
 }
 .join{
-    background: url("/img/head_ready4.jpg") center center/cover no-repeat;
+    background: url("img/head_ready4.jpg") center center/cover no-repeat;
 }
 .future{
     .modal-video-overlay {
