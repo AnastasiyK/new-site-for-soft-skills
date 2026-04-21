@@ -7,6 +7,7 @@ const htmlmin = require("gulp-htmlmin");
 const imagemin = require("gulp-imagemin");
 const mozjpeg = require("imagemin-mozjpeg");
 const pngquant = require("imagemin-pngquant");
+const ghpages = require("gh-pages"); 
 
 gulp.task("server", function () {
     browserSync.init({ server: { baseDir: "dist" } });
@@ -69,15 +70,21 @@ gulp.task("watch", function () {
     gulp.watch("src/img/**/*", gulp.parallel("images"));
 });
 
-gulp.task(
-    "default",
-    gulp.series(
-        gulp.parallel("styles", "scripts", "html", "icons", "images"),
-        gulp.parallel("watch", "server")
-    )
-);
 
-gulp.task(
-    "build",
-    gulp.series("styles", "scripts", "html", "icons", "images")
-);
+gulp.task("default", gulp.series(
+    gulp.parallel("styles", "scripts", "html", "icons", "images"),
+    gulp.parallel("watch", "server")
+));
+
+gulp.task("build", gulp.series("styles", "scripts", "html", "icons", "images"));
+
+gulp.task('deploy', function() {
+    return ghpages.publish('dist', {
+        branch: 'gh-pages',
+        message: `Deploy: ${new Date().toISOString()}`,
+        dot: true,
+        silent: false
+    });
+});
+
+gulp.task('build-and-deploy', gulp.series('build', 'deploy'));
