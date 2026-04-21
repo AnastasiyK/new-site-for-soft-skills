@@ -103,10 +103,22 @@
                             <img src="icons/rocket.svg" alt="иконка ракеты">
                             <span>Записаться на пробный урок</span>
                         </button>
-                        <button class="future__btn future__btn--right">
+                        <button class="future__btn future__btn--right" data-open-modal>
                             <img src="icons/triangle_white.svg" alt="иконка проигрывателя">
                             <span>Смотреть видео</span>
                         </button>
+
+                        <div id="modal" class="modal-video-overlay">
+                            <div class="course__form">
+                                <div class="modal-content">
+                                <span class="modal-close">&times;</span>
+                                <video id="videoPlayer" controls>
+                                    <source src="video/childrenvideo.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="future__advantages">
                         <div>
