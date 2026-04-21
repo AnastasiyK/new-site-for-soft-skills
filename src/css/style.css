@@ -79,6 +79,10 @@ img{
     line-height: 100%;
     color: #fff;
     margin-bottom: 18px;
+    text-shadow:
+            1px 1px 2px rgb(0, 0, 0),
+            0 0 1em rgb(32, 0, 32),
+            0 0 0.2em rgb(46, 4, 51);
 }
 
 .tag__programming{
@@ -215,6 +219,13 @@ img{
 }
 
 .logo__text{
+    p{
+        color: #ffffff;
+        text-shadow:
+            1px 1px 2px rgb(0, 0, 0),
+            0 0 1em rgb(32, 0, 32),
+            0 0 0.2em rgb(46, 4, 51);
+    }
     span{
         display: block;
         color: rgb(255, 255, 255);
@@ -242,6 +253,10 @@ img{
         justify-content: space-between;
         align-items: center;
         transition: all 2s ease; 
+        text-shadow:
+            1px 1px 2px rgb(0, 0, 0),
+            0 0 1em rgb(32, 0, 32),
+            0 0 0.2em rgb(46, 4, 51);
     }
     &:hover{
         background: #d400ff;
@@ -311,6 +326,10 @@ img{
         background-color: var(--accent-color); 
         border: none; 
         color: #fff; 
+        text-shadow:
+            1px 1px 2px rgb(0, 0, 0),
+            0 0 1em rgb(32, 0, 32),
+            0 0 0.2em rgb(46, 4, 51);
     }
     .future__title {
         margin-bottom: 32px;
@@ -360,6 +379,12 @@ img{
             &:hover{
                 background: #d400ff;
             }
+            span{
+                text-shadow:
+                    1px 1px 2px rgb(0, 0, 0),
+                    0 0 1em rgb(32, 0, 32),
+                    0 0 0.2em rgb(46, 4, 51);
+            }
         }
         .future__btn--right{
             color: #fff;
@@ -368,6 +393,12 @@ img{
             cursor: pointer;
             &:hover{
                 background: #d400ff;
+            }
+            span{
+                text-shadow:
+                1px 1px 2px rgb(0, 0, 0),
+                0 0 1em rgb(32, 0, 32),
+                0 0 0.2em rgb(46, 4, 51);
             }
             }
             img{
@@ -394,6 +425,10 @@ img{
                 font-weight: 400;
                 font-size: 14px;
                 color: #ffffff;
+                text-shadow:
+                    1px 1px 2px rgb(0, 0, 0),
+                    0 0 1em rgb(32, 0, 32),
+                    0 0 0.2em rgb(46, 4, 51);
             }
 
         }
@@ -402,6 +437,10 @@ img{
 .about{
     .about__title{
         color: #dbbce9;
+        text-shadow:
+            1px 1px 2px rgb(0, 0, 0),
+            0 0 1em rgb(32, 0, 32),
+            0 0 0.2em rgb(46, 4, 51);
     }
     /* display: none; */
     background-color: rgb(81, 0, 116);
@@ -417,6 +456,10 @@ img{
         .about__text{
             p{
                 color: #ffffff;
+                text-shadow:
+                    1px 1px 2px rgb(0, 0, 0),
+                    0 0 1em rgb(32, 0, 32),
+                    0 0 0.2em rgb(46, 4, 51);
             }
         }
     }
@@ -426,9 +469,17 @@ img{
             border-radius: 8px;
             h4{
                 color: #2c1736;
+                text-shadow:
+                    1px 1px 2px rgb(197, 108, 219),
+                    0 0 1em rgb(255, 236, 255),
+                    0 0 0.2em rgb(46, 4, 51);
             }
             p{
                 color: #ffffff;
+                text-shadow:
+                    1px 1px 2px rgb(0, 0, 0),
+                    0 0 1em rgb(32, 0, 32),
+                    0 0 0.2em rgb(46, 4, 51);
             }
         }
     }
@@ -825,6 +876,10 @@ img{
     font-size: 20px;
     font-weight: 700;
     cursor: pointer;
+    text-shadow:
+        1px 1px 2px rgb(0, 0, 0),
+        0 0 1em rgb(32, 0, 32),
+        0 0 0.2em rgb(46, 4, 51);
     &:hover{
         background: #d400ff;
     }
@@ -842,6 +897,10 @@ img{
     border: none;
     color: #fff;
     width: fit-content;      /* чтобы не растягивался на всю ширину */
+    text-shadow:
+        1px 1px 2px rgb(0, 0, 0),
+        0 0 1em rgb(32, 0, 32),
+        0 0 0.2em rgb(46, 4, 51);
 }
 
 .diploma{
@@ -878,6 +937,10 @@ img{
             }
             .info__text{
                 color: #e3c5e6;
+                text-shadow:
+                    1px 1px 2px rgb(0, 0, 0),
+                    0 0 1em rgb(32, 0, 32),
+                    0 0 0.2em rgb(46, 4, 51);
                 h4{
                     color: #ffffff;
                 }
@@ -902,6 +965,10 @@ img{
             text-align: center;
             color: #fff;
             cursor: pointer;
+            text-shadow:
+                1px 1px 2px rgb(0, 0, 0),
+                0 0 1em rgb(32, 0, 32),
+                0 0 0.2em rgb(46, 4, 51);
             &:hover{
                 background: #d400ff;;
             }
@@ -944,6 +1011,10 @@ img{
     .questions__title{
         margin-bottom: 58px;
         color: #e3c5e6;
+        text-shadow:
+            1px 1px 2px rgb(0, 0, 0),
+            0 0 1em rgb(32, 0, 32),
+            0 0 0.2em rgb(46, 4, 51);
     }
     .questions__wrapper{
         display: flex;
@@ -980,6 +1051,10 @@ img{
         cursor: pointer;
         p{
             color: #ffffff;
+            text-shadow:
+                1px 1px 2px rgb(0, 0, 0),
+                0 0 1em rgb(32, 0, 32),
+                0 0 0.2em rgb(46, 4, 51);
         }
     }
     .questions__text::after{
@@ -1022,6 +1097,10 @@ img{
 
 .title__who{
     margin-bottom: 40px;
+    text-shadow:
+        1px 1px 2px rgb(0, 0, 0),
+        0 0 1em rgb(32, 0, 32),
+        0 0 0.2em rgb(46, 4, 51);
 }
 
 .review{
@@ -1037,6 +1116,10 @@ img{
     border: none;
     color: #fff;
     width: fit-content;      /* чтобы не растягивался на всю ширину */
+    text-shadow:
+        1px 1px 2px rgb(0, 0, 0),
+        0 0 1em rgb(32, 0, 32),
+        0 0 0.2em rgb(46, 4, 51);
 }
 .says{
     display: flex;
@@ -1250,8 +1333,13 @@ img{
             .says__one{
                 width: 100%;
                 p{
+                    font-size: 20px;
                     width: 100%;
                     text-align: center;
+                    text-shadow:
+                        1px 1px 2px rgb(0, 0, 0),
+                        0 0 1em rgb(32, 0, 32),
+                        0 0 0.2em rgb(46, 4, 51);
                 }
                 .who{
                     p{
@@ -1276,6 +1364,12 @@ img{
         width: 100%;
         .footer__info{
             width: 100%;
+        }
+        .footer__text{
+            text-shadow:
+                1px 1px 2px rgb(0, 0, 0),
+                0 0 1em rgb(32, 0, 32),
+                0 0 0.2em rgb(46, 4, 51);
         }
     }
 }
