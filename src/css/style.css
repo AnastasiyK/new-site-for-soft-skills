@@ -59,6 +59,22 @@ a {
     visibility: visible;
 }
 
+
+.modal-video__container {
+    position: relative;
+    padding: 30px;
+    background-color: rgb(205, 130, 255);
+}
+
+.modal-close{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
 img{
     border-radius: 8px;
 }
@@ -546,14 +562,6 @@ img{
     background-color: rgb(205, 130, 255);
     border-radius: 8px;
     box-shadow: 3px 3px 5px rgb(44, 7, 65);
-    .modal-close{
-        padding: 10px;
-        position: absolute;
-        top: 5px;
-        right: 10px;
-        font-size: 30px;
-        cursor: pointer;
-    }
     .signup{
         display: flex;
         flex-direction: column;

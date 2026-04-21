@@ -43,6 +43,49 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="modal-signup" class="modal-overlay">
+        <div class="course__form">
+            <div class="modal-content">
+                <span class="modal-close" data-close-modal>
+                    &times;
+                </span>
+                <form class="signup">
+                    <h2>Запись на пробное занятие</h2>
+
+                    <div class="input__field">
+                        <label for="title">ФИО родителя</label>
+                        <input type="text" name="name-parent" required placeholder="">
+                    </div>
+
+                    <div class="input__field">
+                        <label for="title">Номер телефона</label>
+                        <input type="tel" name="number" required placeholder="">
+                    </div>
+
+                    <div class="input__field">
+                        <label for="title">ФИО ребёнка</label>
+                        <input type="text" name="name-child" required placeholder="">
+                    </div>
+
+                    <div class="input__field">
+                        <label for="title">Дата рождения</label>
+                        <input type="date" name="date" required placeholder="">
+                    </div>
+
+                    <button type="submit" class="btn">Отправить заявку</button>                    
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-video" class="modal-overlay">
+        <div class="modal-content modal-video__container">
+            <span class="modal-close" data-close-modal>&times;</span>
+            <div class="video-wrapper">
+                <iframe src="https://vk.com/clip_ext.php?oid=-232002532&id=456239071&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
     <header class="header">
         <div class="container">
             <div class="header__wrapper">
@@ -80,7 +123,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="/" class="phone" data-open-modal>
+                <a href="/" class="phone" data-open-modal="signup">
                     <img src="icons/phone.svg" alt="Телефон">
                     <span>Записаться</span>                    
                 </a>
@@ -99,26 +142,14 @@
                     <h1 class="future__title">Программируем<br/>будущее уже<br/>сегодня!</h1>
                     <p class="future__subtitle">Научим вашего ребёнка создавать игры и приложения<br/>без скучной теории. Только практика, творчество и результат!</p>
                     <div class="future__btns">
-                        <button class="future__btn future__btn--left" data-open-modal>
+                        <button class="future__btn future__btn--left" data-open-modal="signup">
                             <img src="icons/rocket.svg" alt="иконка ракеты">
                             <span>Записаться на пробный урок</span>
                         </button>
-                        <button class="future__btn future__btn--right" data-open-modal>
+                        <button class="future__btn future__btn--right"  data-open-modal="video">
                             <img src="icons/triangle_white.svg" alt="иконка проигрывателя">
                             <span>Смотреть видео</span>
                         </button>
-
-                        <div id="modal" class="modal-video-overlay">
-                            <div class="course__form">
-                                <div class="modal-content">
-                                <span class="modal-close">&times;</span>
-                                <video id="videoPlayer" controls>
-                                    <source src="video/childrenvideo.mp4" type="video/mp4">
-                                    Ваш браузер не поддерживает видео.
-                                </video>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     <div class="future__advantages">
                         <div>
@@ -283,42 +314,9 @@
                 </div>
            </div>
            
-           <button class="courses__btn" data-open-modal>
+           <button class="courses__btn" data-open-modal="signup">
                 Записаться на пробный урок
             </button>
-            <div id="modal" class="modal-overlay">
-                <div class="course__form">
-                    <div class="modal-content">
-                    <span class="modal-close">
-                        &times;
-                    </span>
-                    <form class="signup">
-                        <h2>Запись на пробное занятие</h2>
-
-                        <div class="input__field">
-                            <label for="title">ФИО родителя</label>
-                            <input type="text" name="name-parent" required placeholder="">
-                        </div>
-
-                        <div class="input__field">
-                            <label for="title">Номер телефона</label>
-                            <input type="tel" name="number" required placeholder="">
-                        </div>
-
-                        <div class="input__field">
-                            <label for="title">ФИО ребёнка</label>
-                            <input type="text" name="name-child" required placeholder="">
-                        </div>
-
-                        <div class="input__field">
-                            <label for="title">Дата рождения</label>
-                            <input type="date" name="date" required placeholder="">
-                        </div>
-
-                        <button type="submit" class="btn">Отправить заявку</button>                    
-                    </form>
-                </div>
-            </div>
         </section>   
         <section class="certificate">
             <div class="container">
@@ -519,7 +517,7 @@
     </footer>
     <script src="js/switch-online-offline.js"></script>
     <script src="js/accordion.js"></script>
-    <script src="js/form.js"></script>    
+    <script src="js/open-modal.js"></script>    
 
 </body>
 </html>
