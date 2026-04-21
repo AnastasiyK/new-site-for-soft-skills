@@ -124,7 +124,7 @@ img{
     justify-content: space-between;
     align-items: center;
     .hamburger{
-        width: 70px;
+        width: 50px;
         display: none;
         flex-direction: column; 
         gap: 5px; 
@@ -193,6 +193,7 @@ img{
 .logo{
     display: flex;
     gap: var(--fixed-measure);
+    align-items: center;
 }
 
 
@@ -213,7 +214,8 @@ img{
 }
 
 .logo__text{
-    p{
+    span{
+        display: block;
         color: rgb(255, 255, 255);
         &:nth-child(1){
             color: #ffffff;
@@ -245,8 +247,9 @@ img{
     }
 }
 
-
 .future {
+    background: url("img/head_ready4.jpg") center center/cover no-repeat;
+
     .modal-video-overlay {
             display: none;
             position: fixed;
@@ -1278,6 +1281,11 @@ img{
         .header__list{
             display: none;
         }
+        .logo__text{
+            span:nth-child(2){
+                display: none;
+            }
+        }
     }
     /* .hamburger {
             display: flex!important;
@@ -1360,10 +1368,6 @@ img{
     }
     section{
         padding: 40px 0;
-    }
-    .container{
-        width: 510px;
-        justify-content: center;
     }
     .about{
         justify-content: center;
