@@ -87,6 +87,10 @@ img{
     line-height: 100%;
     color: #fff;
     margin-bottom: 18px;
+    text-shadow:
+            1px 1px 2px rgb(0, 0, 0),
+            0 0 1em rgb(32, 0, 32),
+            0 0 0.2em rgb(46, 4, 51);
 }
 
 .tag__programming{
@@ -97,6 +101,7 @@ img{
     }
 }
 .about__descr{
+    width: 100%;
     .about__descr1{
         color: var(--text-grey); 
         margin-bottom: 24px;
@@ -251,6 +256,13 @@ img{
 }
 
 .logo__text{
+    p{
+        color: #ffffff;
+        text-shadow:
+            1px 1px 2px rgb(0, 0, 0),
+            0 0 1em rgb(32, 0, 32),
+            0 0 0.2em rgb(46, 4, 51);
+    }
     span{
         display: block;
         color: rgb(255, 255, 255);
@@ -288,6 +300,10 @@ img{
         align-items: center;
         -webkit-transition: all 2s ease;
         transition: all 2s ease; 
+        text-shadow:
+            1px 1px 2px rgb(0, 0, 0),
+            0 0 1em rgb(32, 0, 32),
+            0 0 0.2em rgb(46, 4, 51);
     }
     &:hover{
         background: #d400ff;
@@ -371,6 +387,10 @@ img{
         background-color: var(--accent-color); 
         border: none; 
         color: #fff; 
+        text-shadow:
+            1px 1px 2px rgb(0, 0, 0),
+            0 0 1em rgb(32, 0, 32),
+            0 0 0.2em rgb(46, 4, 51);
     }
     .future__title {
         margin-bottom: 32px;
@@ -427,6 +447,12 @@ img{
             &:hover{
                 background: #d400ff;
             }
+            span{
+                text-shadow:
+                    1px 1px 2px rgb(0, 0, 0),
+                    0 0 1em rgb(32, 0, 32),
+                    0 0 0.2em rgb(46, 4, 51);
+            }
         }
         .future__btn--right{
             color: #fff;
@@ -436,6 +462,12 @@ img{
             cursor: pointer;
             &:hover{
                 background: #d400ff;
+            }
+            span{
+                text-shadow:
+                1px 1px 2px rgb(0, 0, 0),
+                0 0 1em rgb(32, 0, 32),
+                0 0 0.2em rgb(46, 4, 51);
             }
             }
             img{
@@ -469,6 +501,10 @@ img{
                 font-weight: 400;
                 font-size: 14px;
                 color: #ffffff;
+                text-shadow:
+                    1px 1px 2px rgb(0, 0, 0),
+                    0 0 1em rgb(32, 0, 32),
+                    0 0 0.2em rgb(46, 4, 51);
             }
 
         }
@@ -477,9 +513,12 @@ img{
 .about{
     .about__title{
         color: #dbbce9;
+        text-shadow:
+            1px 1px 2px rgb(0, 0, 0),
+            0 0 1em rgb(32, 0, 32),
+            0 0 0.2em rgb(46, 4, 51);
     }
-    display: none;
-    padding: 80px 0;
+    /* display: none; */
     background-color: rgb(81, 0, 116);
     background-image: -webkit-gradient(
         linear,left top, left bottom,color-stop(0, rgb(227, 195, 240)),color-stop(13%),
@@ -497,6 +536,10 @@ img{
         .about__text{
             p{
                 color: #ffffff;
+                text-shadow:
+                    1px 1px 2px rgb(0, 0, 0),
+                    0 0 1em rgb(32, 0, 32),
+                    0 0 0.2em rgb(46, 4, 51);
             }
         }
     }
@@ -506,9 +549,17 @@ img{
             border-radius: 8px;
             h4{
                 color: #2c1736;
+                text-shadow:
+                    1px 1px 2px rgb(197, 108, 219),
+                    0 0 1em rgb(255, 236, 255),
+                    0 0 0.2em rgb(46, 4, 51);
             }
             p{
                 color: #ffffff;
+                text-shadow:
+                    1px 1px 2px rgb(0, 0, 0),
+                    0 0 1em rgb(32, 0, 32),
+                    0 0 0.2em rgb(46, 4, 51);
             }
         }
     }
@@ -753,8 +804,7 @@ img{
 }
 
 .certificate{
-    display: none;
-    padding: 80px 0;
+    /* display: none; */
     background-color: rgb(81, 0, 116);
     background-image: -webkit-gradient(
         linear,
@@ -770,8 +820,7 @@ img{
 }
 
 .feedback{
-    display: none;
-    padding: 80px 0;
+    /* display: none; */
     background-color: rgb(81, 0, 116);
     background-image: -webkit-gradient(
         linear, 
@@ -998,6 +1047,10 @@ img{
     font-size: 20px;
     font-weight: 700;
     cursor: pointer;
+    text-shadow:
+        1px 1px 2px rgb(0, 0, 0),
+        0 0 1em rgb(32, 0, 32),
+        0 0 0.2em rgb(46, 4, 51);
     &:hover{
         background: #d400ff;
     }
@@ -1024,6 +1077,10 @@ img{
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;      /* чтобы не растягивался на всю ширину */
+    text-shadow:
+        1px 1px 2px rgb(0, 0, 0),
+        0 0 1em rgb(32, 0, 32),
+        0 0 0.2em rgb(46, 4, 51);
 }
 
 .diploma{
@@ -1081,6 +1138,10 @@ img{
             }
             .info__text{
                 color: #e3c5e6;
+                text-shadow:
+                    1px 1px 2px rgb(0, 0, 0),
+                    0 0 1em rgb(32, 0, 32),
+                    0 0 0.2em rgb(46, 4, 51);
                 h4{
                     color: #ffffff;
                 }
@@ -1106,6 +1167,10 @@ img{
             text-align: center;
             color: #fff;
             cursor: pointer;
+            text-shadow:
+                1px 1px 2px rgb(0, 0, 0),
+                0 0 1em rgb(32, 0, 32),
+                0 0 0.2em rgb(46, 4, 51);
             &:hover{
                 background: #d400ff;;
             }
@@ -1147,8 +1212,7 @@ img{
 }
 
 .questions{
-    display: none;
-    padding: 80px 0;
+    /* display: none; */
     background-color: rgb(81, 0, 116);
     background-image: -webkit-gradient(
         linear, 
@@ -1164,6 +1228,10 @@ img{
     .questions__title{
         margin-bottom: 58px;
         color: #e3c5e6;
+        text-shadow:
+            1px 1px 2px rgb(0, 0, 0),
+            0 0 1em rgb(32, 0, 32),
+            0 0 0.2em rgb(46, 4, 51);
     }
     .questions__wrapper{
         display: -webkit-box;
@@ -1213,6 +1281,10 @@ img{
         cursor: pointer;
         p{
             color: #ffffff;
+            text-shadow:
+                1px 1px 2px rgb(0, 0, 0),
+                0 0 1em rgb(32, 0, 32),
+                0 0 0.2em rgb(46, 4, 51);
         }
     }
     .questions__text::after{
@@ -1256,13 +1328,17 @@ img{
 
 .questions__item.active .questions__answer{
     padding: 20px;
-    max-height: 120px;
+    max-height: 200px;
     min-height: 80px;
     border-radius: var(--fixed-border-radius);
 }
 
 .title__who{
     margin-bottom: 40px;
+    text-shadow:
+        1px 1px 2px rgb(0, 0, 0),
+        0 0 1em rgb(32, 0, 32),
+        0 0 0.2em rgb(46, 4, 51);
 }
 
 .review{
@@ -1287,6 +1363,10 @@ img{
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;      /* чтобы не растягивался на всю ширину */
+    text-shadow:
+        1px 1px 2px rgb(0, 0, 0),
+        0 0 1em rgb(32, 0, 32),
+        0 0 0.2em rgb(46, 4, 51);
 }
 .says{
     display: -webkit-box;
@@ -1320,7 +1400,7 @@ img{
     }
     .says__one{
         width: 400px;
-        height: 271px;
+        min-height: 271px;
         color: #e3c5e6;
         background-color: rgb(224, 176, 255, 0.5);
         border-radius: 8px;
@@ -1336,7 +1416,7 @@ img{
     }
 }
 .footer{
-    display: none;
+    /* display: none; */
     background-color: #2c1736;
     color: #e7d5f8;
     width: 100%;
@@ -1406,6 +1486,32 @@ img{
     .container{
         width: 1100px;
     }
+    .about{
+        .about__wrapper {
+            gap: 90px;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        }
+        .about__photo{
+            img{
+                height: 90%;
+                width: 100%;
+            }
+        }
+    }
+    .courses{
+        .courses__tickets{
+            .ticket-big{ 
+                padding: 5px;
+                width: 50%;
+            }
+            .ticket-small{ 
+                padding: 5px;
+                display: block;
+                width: 50%;
+            }
+        }
+    }
 }
     
 @media (max-width: 1200px){
@@ -1425,16 +1531,19 @@ img{
             text-align: center;
         }
         .about__wrapper{
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
             width: 100%;
+            p{
+                width: 100%;
+            }
             .about__wrapper-left{
-                .about__text{
-                    p{
-                        width: 100%;
-                    }
-                }
+                width: 100%;
+            }
+            .about__wrapper-right{
+                width: 100%;
             }
         }
-
         .about__facts{
             display: -webkit-box;
             display: -ms-flexbox;
@@ -1445,11 +1554,12 @@ img{
             -webkit-box-align: center;
             -ms-flex-align: center;
             align-items: center;
-            width: 800px;
+            width: 100%;
+            height: 65%;
             .about__fact{
                 padding: 10px;
-                height: 250px;
-                width: 200px;
+                height: 100%;
+                width: 100%;
                 gap: 15px;
                 -webkit-box-align: start;
                 -ms-flex-align: start;
@@ -1473,11 +1583,9 @@ img{
             -webkit-box-align: center;
             -ms-flex-align: center;
             align-items: center;
-            width: 800px;
+            width: 100%;
+            height: 100%;
             gap: 15px;
-            img{
-                height: 250px;
-            }
         }
         .about__descr{
             width: 100%;
@@ -1485,16 +1593,24 @@ img{
         }
     }
     .courses{
-        .ticket-big {
-            width: 390px;
+        .courses__tickets{
+            .ticket-big {
+                width: 50%;
+            }
+            .ticket-small{
+                width: 250px;
+            }
         }
-        .ticket-small{
-            width: 250px;
-        }
+        
     }
     .certificate{
+        .diploma{
+            width: 100%;
+            gap: 10px;
+        }
         img{
             width: 50%;
+            height: 50%;
         }
     }
     .feedback{
@@ -1508,10 +1624,15 @@ img{
             -ms-flex-direction: column;
             flex-direction: column;
             .says__one{
-                width: 500px;
+                width: 100%;
                 p{
-                    width: 450px;
+                    font-size: 18px;
+                    width: 100%;
                     text-align: center;
+                    text-shadow:
+                        1px 1px 2px rgb(0, 0, 0),
+                        0 0 1em rgb(32, 0, 32),
+                        0 0 0.2em rgb(46, 4, 51);
                 }
                 .who{
                     p{
@@ -1530,6 +1651,18 @@ img{
                     width: 15px;
                 }
             }
+        }
+    }
+    .footer{
+        width: 100%;
+        .footer__info{
+            width: 100%;
+        }
+        .footer__text{
+            text-shadow:
+                1px 1px 2px rgb(0, 0, 0),
+                0 0 1em rgb(32, 0, 32),
+                0 0 0.2em rgb(46, 4, 51);
         }
     }
 }
@@ -1552,7 +1685,7 @@ img{
         }
         .about__wrapper{
             .about__wrapper-left{
-                width: 850px;
+                width: 100%;
                 text-align: center;
 
             }
@@ -1646,6 +1779,9 @@ img{
         padding: 60px 0;
     }
     .about{
+        .about__title{
+            font-size: 24px;
+        }
         .about__facts{
             display: -webkit-box;
             display: -ms-flexbox;
@@ -1654,23 +1790,39 @@ img{
             -webkit-box-direction: normal;
             -ms-flex-direction: column;
             flex-direction: column;
-            width: 720px;
             .about__fact{
                 /* display: block; */
-                width: 670px;
-                height: 100px;
                 padding: 7px 19px;
+                p{
+                    width: 100%;
+                    font-size: 18px;
+                }
+                h4{
+                    padding: 0 32px;
+                }
+                &::before {
+                    top: 0;
+                    left: 0;
+                }
             }
         }
+        .about__wrapper-right{
+            width: 100%;
+        }
         .about__photo{
-            width: 720px;
+            width: 100%;
             gap: 10px;
             -webkit-box-pack: justify;
             -ms-flex-pack: justify;
             justify-content: space-between;
             img{
-                width: 200px;
+                width: 30%;
+                height: 100%;
             }
+        }
+        .about__descr{
+            text-align: center;
+            font-size: 18px;
         }
     }
     .courses{
@@ -1706,7 +1858,34 @@ img{
         }
 
     }
+    .certificate{
+        .diploma{
+            display: block;
+            margin-bottom: 32px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        span{
+            font-size: 12px;
+        }
+    }
+    .feedback{
+        .review{
+            font-size: 12px;
+        }
+        .title{
+            font-size: 18px;
+        }
+    }
     .info{
+        .info__wrapper{
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
         .info__right{
             iframe{
                 width: 300px;
@@ -1715,17 +1894,37 @@ img{
             
         }
     }
-    .certificate{
-        img{
-            width: 300px;
-        }
     }
     .questions{
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
+        .questions__title {
+            font-size: 18px;
+        }
+        .questions__text{
+            p{
+                width: 80%;
+            }
+        }
+        .questions__answer{
+            height: 100%;
+        }
     }
-}
+    .footer{
+        text-align: center;
+        width: 100%;
+        .footer__info{
+            display: block;
+            width: 100%;
+            p{
+                font-size: 18px;
+            }
+            .addres{
+                p{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
 
 
 @media (max-width: 567px){
@@ -1798,23 +1997,16 @@ img{
             -webkit-box-direction: normal;
             -ms-flex-direction: column;
             flex-direction: column;
-            width: 500px;
             .about__fact{
                 /* display: block; */
-                width: 100%;
-                height: 100px;
                 padding: 7px 19px;
             }
         }
         .about__photo{
-            width: 510px;
             gap: 10px;
             -webkit-box-pack: justify;
             -ms-flex-pack: justify;
             justify-content: space-between;
-            img{
-                width: 150px;
-            }
         }
     }
     .courses{
@@ -1830,12 +2022,12 @@ img{
             }
             .ticket-big{ 
                 padding: 5px;
-                width: 90%;
+                width: 300px;
             }
             .ticket-small{ 
                 padding: 5px;
                 display: block;
-                width: 90%;
+                width: 300px;
             }
         }
         .course__form{
@@ -1843,19 +2035,10 @@ img{
             width: 400px;
         }
     }
-    .certificate{
-        img{
-            width: 200px;
-        }
-    }
     .info{
         .info__wrapper{
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-            flex-direction: column;
         }
     }
