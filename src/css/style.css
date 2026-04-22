@@ -59,6 +59,22 @@ a {
     visibility: visible;
 }
 
+.modal-video__container {
+    position: relative;
+    padding: 30px;
+    background-color: rgb(205, 130, 255);
+}
+
+.modal-close, 
+.close__btn{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
 img{
     border-radius: 8px;
 }
@@ -159,38 +175,27 @@ img{
         &.active{
             display: block;
         }
-        nav{
-            padding-top: 15px;
-            width: 40%;
-            background: white;
+        .menu__block{
+            position: relative;
+            padding-top: 40px;
+            width: 250px;
+            background: rgb(205, 130, 255);
             height: 100%;
             position: relative;
             ul{
                 li{
                     padding: 10px;
-                    border-bottom: 1px solid #6c6c6c;
                     &:hover{
                         /* text-decoration: underline wavy rgb(255, 0, 204); при наведении появляется подчеркивание */
                         transition: all 2s ease; /* плавный переход с длительностью 2 секунды */
                         background: var(--accent-color);
                     }
                     a{
-                        padding: 20PX;
+                        color: #fff;
+                        padding: 20px;
                     }
                 }
             }
-        }
-        .close__btn{
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            font-size: 20px;
-            width: 50px;
-            height: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #2c1736;
         }
     }
 }
@@ -1143,7 +1148,7 @@ img{
     }
     .says__one{
         width: 400px;
-        height: 271px;
+        min-height: 271px;
         color: #e3c5e6;
         background-color: rgb(224, 176, 255, 0.5);
         border-radius: 8px;
